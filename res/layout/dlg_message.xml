@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="150dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="150dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bgcolor"
+            android:paddingTop="1dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#999999"
+                android:src="@drawable/message" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#999999"
+                android:gravity="center_vertical|left"                
+                android:text="  도와줘요 방범대!"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bgcolor"
+            android:orientation="vertical"     
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:paddingBottom="0dp"
+             >
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#999999"
+                android:gravity="center"
+                android:text="\n지금 대원들에게 알릴까요?"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+               <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#999999"
+                    android:gravity="center"
+                    android:text="(60초 후에는 자동으로 알립니다.)"
+                    android:textColor="#000000"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bgcolor"
+            android:paddingBottom="1dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp" >
+			<Button
+                android:id="@+id/bt_msg_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#999999"
+                android:text="아니오"
+                android:textColor="#000000" />
+            <Button
+                android:id="@+id/bt_msg_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"      
+                android:background="#999999"
+                android:text="  예   "
+                android:textColor="#000000"/>
+
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

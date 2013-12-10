@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.NoTitleBar"
+    android:visibility="visible" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgcolor2"
+        android:layout_weight="90"
+        android:layout_margin="1dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_addlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test Sensor"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FF000000" />
+
+            <TextView
+                android:id="@+id/tv_sensor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FF000000" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Largest value   : "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FF000000" />
+
+                <TextView
+                    android:id="@+id/tv_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FF000000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRow01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Over threshold : "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FF000000" />
+
+                <TextView
+                    android:id="@+id/tv_over"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FF000000" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="80"
+                android:text=" Threshold : "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FF000000" />
+
+            <EditText
+                android:id="@+id/et_threshold"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="10"
+                android:ems="10"
+                android:background="@color/bgcolor"
+                android:inputType="number" />
+
+            <ImageButton
+                android:id="@+id/bt_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                
+                android:background="@drawable/selector_alert_save" />
+        </LinearLayout>
+
+        <project.safealert.alert.GraphView
+            android:id="@+id/v_graph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.76"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/bt_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/theme"
+            android:src="@drawable/selector_alert_start" />
+
+        <ImageButton
+            android:id="@+id/bt_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/theme"
+            android:src="@drawable/selector_alert_stop" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+ android:oneshot="true" >     
+<item android:drawable="@drawable/main_background1" android:duration="230" />
+<item android:drawable="@drawable/main_background2" android:duration="60" />
+<item android:drawable="@drawable/main_background3" android:duration="60" />
+<item android:drawable="@drawable/main_background4" android:duration="60" />
+<item android:drawable="@drawable/main_background5" android:duration="50" />
+<item android:drawable="@drawable/main_background6" android:duration="50" />
+<item android:drawable="@drawable/main_background7" android:duration="40" />
+<item android:drawable="@drawable/main_background8" android:duration="40" />
+</animation-list>
